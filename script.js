@@ -9,7 +9,6 @@ window.addEventListener("load", function() {
         jsonPromise.then(function(json) {
             console.log(json);
             const container = document.getElementById('container');
-            container.innerHTML = '';
             for (let astronaut of json) {
                 container.innerHTML += `
                 <div class="astronaut">
